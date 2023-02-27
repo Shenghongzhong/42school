@@ -1,0 +1,16 @@
+  407  ls -a
+  408  git init
+  409  git add README.md
+  410  echo 'The start date is 27/02/2023.' README.md
+  411  git add README.md
+  412  ls
+  413  echo 'The start date is 27/02/2023.' > README.md
+  414  ls
+  415  git add README.md
+  416  git status
+  417  git add .
+  418  ls
+  419  cd shell
+  420  ls
+  421  mkdir time_machine
+  422  cd time_machine
