@@ -1,0 +1,13 @@
+--- myfile.c	2023-03-01 13:47:48.890615562 +0000
++++ new_myfile.c	2023-03-01 13:37:51.982024309 +0000
+@@ -1,7 +1,9 @@
+ #include <stdio.h>
+ 
+-int main() {
++void main() {
+ printf("Hello LinuxHint\n");
++
++printf("Welcome to linuxhint");
+ }
+ 
+ 
