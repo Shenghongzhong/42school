@@ -1,20 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ft.c                                            :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: szhong <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/08 16:52:23 by szhong            #+#    #+#             */
-/*   Updated: 2023/03/08 20:33:32 by szhong           ###   ########.fr       */
+/*   Created: 2023/03/09 20:26:42 by szhong            #+#    #+#             */
+/*   Updated: 2023/03/09 20:32:55 by szhong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include <stdio.h>
 
-void	ft_ft(int *nbr)
+int ft_strlen(char *str)
 {
-	// so nbr is a pointer variable
-	int	num;
+	int	counter;
 
-	num = "42";
-	nbr = &num;
+	counter = 0;
+	while (*str != '\0')
+	{
+		counter++;
+	       	str++;
+	}
+	return counter;
+}
+
+
+int	main()
+{
+	char	string[] = "Please exit the program";
+	int	length;
+
+	length = ft_strlen(string);
+
+	printf("%d", length);
+
 }

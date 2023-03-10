@@ -1,20 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ft.c                                            :+:      :+:    :+:   */
+/*   ft_ultimate_ft.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: szhong <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/08 16:52:23 by szhong            #+#    #+#             */
-/*   Updated: 2023/03/08 20:33:32 by szhong           ###   ########.fr       */
+/*   Created: 2023/03/08 20:34:02 by szhong            #+#    #+#             */
+/*   Updated: 2023/03/08 22:03:04 by szhong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_ft(int *nbr)
+void	ft_ultimate_ft(int *********nbr)
 {
-	// so nbr is a pointer variable
-	int	num;
+	**********nbr = 42;
+}
 
-	num = "42";
-	nbr = &num;
+int	main()
+{	
+	int	*ptr;
+	int	**ptr_two;
+	int	***ptr_three;
+	int	****ptr_four;
+	int	*****ptr_five;
+	int	******ptr_six;
+	int	*******ptr_seven;
+	int	********ptr_eight;
+	int	*********ptr_nine;
+
+	ft_ultimate_ft(ptr_nine);
 }
